@@ -7,7 +7,9 @@
   <script src="../build/build.js"></script>
   <script>
     var provider = require("sso-check-provider");
-    provider('testing');
+    provider('my-cookie-name', {
+      swf: "../build/fs-components-easyXDM/easyxdm.swf"
+    });
   </script>
 </body>
 </html>
