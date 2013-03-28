@@ -1,0 +1,16 @@
+{
+  "name": "sso-check-provider",
+  "repo": "fs-components/sso-check-provider",
+  "description": "Simple SSO check provider",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "fs-components/easyXDM": "*",
+    "component/cookie": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
