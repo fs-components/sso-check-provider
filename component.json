@@ -5,8 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "fs-components/easyXDM": "*",
-    "component/cookie": "*"
+    "fs-components/easyXDM": "*"
   },
   "development": {},
   "license": "MIT",

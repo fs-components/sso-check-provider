@@ -7,7 +7,15 @@
   <script src="../build/build.js"></script>
   <script>
     var provider = require("sso-check-provider");
-    provider('my-cookie-name', {
+
+    function check (success, error) {
+      // Do actual check here... For this test we just generate a random response
+      var result = Math.random() < .5;
+      console.log("Sending message:",result);
+      return result;
+    };
+
+    provider(check, {
       swf: "../build/fs-components-easyXDM/easyxdm.swf"
     });
   </script>

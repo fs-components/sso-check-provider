@@ -15,7 +15,11 @@ API
 ```js
 var sso = require("sso-check-provider");
 
-sso('my-cookie-name', {
+function mySessionCheck() {
+  return !!cookie("sessionid");
+}
+
+sso(mySessionCheck, {
   swf: "http://my-host.com/path/to/easyxdm.swf"
 });
 ```
